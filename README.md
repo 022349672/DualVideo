@@ -32,16 +32,7 @@ SHA-256: caab1e4f2156be70ce39d93e62e05e527f0075f76a7c1f5391338a30b94fd42d
 
 ## 重新构建
 
-方式一：用 **Android Studio** 打开本目录，等待 Gradle 同步后 Run。
-
-方式二：命令行（本机已搭建好工具链，位于 `D:\AndroidTools`）：
-
-```bat
-set JAVA_HOME=D:\AndroidTools\jdk-17.0.20.1+1
-set ANDROID_HOME=D:\AndroidTools\Sdk
-set GRADLE_USER_HOME=D:\AndroidTools\.gradle
-gradlew assembleRelease
-```
+用 **Android Studio** 打开本目录，等待 Gradle 同步后 Run。
 
 产物：`app\build\outputs\apk\release\app-release.apk`
 

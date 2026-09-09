@@ -10,10 +10,6 @@
 2. 打开 → 「选择本地视频」→ 选一个视频 → 左右双屏同步播放。
 3. 已装过旧版可直接覆盖安装（同一签名，versionCode 6）。
 
-> **崩溃了怎么办**：v1.3 起，再次打开 App 会**自动弹出上次崩溃的堆栈**，点「复制」后直接发给我就行，不用去翻文件夹。
-> 同时也会写一份到手机「下载 / dualvideo-crash.txt」。
-> （非主线程崩溃没有系统弹窗，看起来就是"应用直接消失"。）
-
 签名信息（自签名，仅用于侧载）：
 
 ```
@@ -93,16 +89,7 @@ v1.1 改为 **单解码器 + GPU 双视口**：
 
 ## 重新构建
 
-方式一：Android Studio 打开本目录，Gradle 同步后 Run。
-
-方式二：命令行（本机工具链在 `D:\AndroidTools`）：
-
-```bat
-set JAVA_HOME=D:\AndroidTools\jdk-17.0.20.1+1
-set ANDROID_HOME=D:\AndroidTools\Sdk
-set GRADLE_USER_HOME=D:\AndroidTools\.gradle
-gradlew assembleRelease
-```
+Android Studio 打开本目录，Gradle 同步后 Run。
 
 产物：`app\build\outputs\apk\release\app-release.apk`
 
